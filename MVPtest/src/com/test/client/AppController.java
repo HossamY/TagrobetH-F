@@ -27,6 +27,7 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 	}
 
 	private void bind() {
+		System.out.println("IN BIND METHOD !!!!!!!!!!!!!");
 		History.addValueChangeHandler(this);
 		eventBus.addHandler(ButtonClickedEvent.TYPE, new ButtonClickedEventHandler() {
 			@Override
